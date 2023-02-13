@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo folha de Pagamento</title>
+    <link rel="stylesheet" type="text/css" href="./link/css/css/styles.css"/>
+</head>
+<body>
+    <header> 
+        <nav>
+            <h1>Cálculo da Folha de Pagamento</h1>
+        </nav>
+    </header>
+
+    <main>
+        <div style="display: flex; flex-direction: row;">
+            <section id="caixa1">
+                <div id="limite-caixa1" style="display: flex; flex-direction: column;">
+                    <div style="display: flex; flex-direction: column;">
+                        <h2>SALÁRIO BRUTO</h2>
+                        <input type="text" name="salario-bruto" id="salario-bruto">
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                        <h2>DEPENDENTES</h2>
+                        <input type="text" name="dependentes" id="dependentes">
+                    </div>
+                    <div id="vale-transporte">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <h2><label for="checkbox">VALE TRANSPORTE</label></h2>
+                    </div>
+                    <input id="button" type="submit" value="Calcular">
+                </div>
+                
+            </section>
+
+            <section id="caixa2">
+                <h2>RESULTADO:</h2>
+                <section>
+                    <p>Salário Bruto</p>
+                    <p>INSS</p>
+                    <p>IRRF</p>
+                    <p>Vale-Transporte</p>
+                    <p>Salário Líquido</p>
+                </section>
+                <input id="button" type="submit" value="Resetar">
+            </section>
+        </div>
+</main>
+
+        <footer>
+            <p>Todos os direitos reservados - Site HTML5</p>
+        </footer>
+    </body>
+</html>
