@@ -42,11 +42,11 @@
                 <caption id="resultado_título"><h2>RESULTADO:</h2></caption>
                 <table id="resultado">
                 <section>
-                    <tr><td>Salário Bruto</td><td>R$3000</td></tr>
-                    <tr><td>INSS</td><td>R$360</td></tr>
-                    <tr><td>IRRF</td><td>R$40,98</td></tr>
-                    <tr><td>Vale-Transporte</td><td>R$180</td></tr>
-                    <tr><td>Salário Líquido</td><td>R$2419,02</td></tr>
+                    <tr><td>Salário Bruto</td><td id="sal">R$3000</td></tr>
+                    <tr><td>INSS</td><td id="inss">R$360</td></tr>
+                    <tr><td>IRRF</td><td id="irrf">R$40,98</td></tr>
+                    <tr><td>Vale-Transporte</td><td id="vale">R$180</td></tr>
+                    <tr><td>Salário Líquido</td><td id="saliquido">R$2419,02</td></tr>
                 </section>
                 </table>
                 <input id="button2" type="submit" value="Resetar">
@@ -58,11 +58,8 @@
             <p>Todos os direitos reservados - Site HTML5</p>
         </footer>
 
-        <script>
-            var button = document.querySelector("#button");
-            button.onclick = function(){
-                window.open('#caixa2');
-            }
+        <script src="./calculadora/js/settings.js">
+           
         </script>
     </body>
 </html>
