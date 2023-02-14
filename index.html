@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo folha de Pagamento</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+</head>
+<body>
+    <header> 
+        <nav>
+            <h1>Cálculo da Folha de Pagamento</h1>
+        </nav>
+    </header>
+
+    <main>
+        <div style="display: flex; flex-direction: row;">
+            <section id="caixa1">
+                <div id="limite-caixa1" style="display: flex; flex-direction: column;">
+                    <div style="display: flex; flex-direction: column;">
+                        <h2>SALÁRIO BRUTO</h2>
+                        <input type="text" name="salario-bruto" id="salario-bruto">
+                    </div>
+                    <br>
+                    <div style=  "display: flex; flex-direction: column; margin-top: 30px;">
+                        <h2>DEPENDENTES</h2>
+                        <input type="text" name="dependentes" id="dependentes">
+                    </div>
+                    
+                    <div style="margin-top: 100px; display: flex;" id="vale-transporte">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <h2><label for="checkbox">VALE TRANSPORTE</label></h2>
+                    </div>
+                    
+                    <input id="button" type="submit" value="Calcular">
+                </div>
+                
+            </section>
+
+            <section id="caixa2">
+                <caption id="resultado_título"><h2>RESULTADO:</h2></caption>
+                <table id="resultado">
+                <section>
+                    <tr><td>Salário Bruto</td><td>R$3000</td></tr>
+                    <tr><td>INSS</td><td>R$360</td></tr>
+                    <tr><td>IRRF</td><td>R$40,98</td></tr>
+                    <tr><td>Vale-Transporte</td><td>R$180</td></tr>
+                    <tr><td>Salário Líquido</td><td>R$2419,02</td></tr>
+                </section>
+                </table>
+                <input id="button2" type="submit" value="Resetar">
+            </section>
+        </div>
+</main>
+
+        <footer>
+            <p>Todos os direitos reservados - Site HTML5</p>
+        </footer>
+
+        <script>
+            var button = document.querySelector("#button");
+            button.onclick = function(){
+                window.open('#caixa2');
+            }
+        </script>
+    </body>
+</html>
